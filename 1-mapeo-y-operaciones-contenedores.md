@@ -34,7 +34,6 @@ Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 docker exec <nombre contenedor> <comando> <argumentos opcionales>
 
 ```
-![image](https://github.com/user-attachments/assets/45f112df-d76b-412e-8ad1-bc5a7f72c67e)
 
 # COMPLETAR
 ### ¿Para qué se usa el comando ls?
@@ -108,12 +107,17 @@ docker exec -i-t <nombre contenedor> <programa o comando>
 ```
 docker exec -it <nombre contenedor> <programa o comando>
 ```
+![image](https://github.com/user-attachments/assets/24836301-bdb1-4294-a80a-11a27c516f92)
+
 
 ### Ahora puedes acceder al contenedor de jenkins y obtener la contraseña ubicada en /var/jenkins_home/secrets/initialAdminPassword
+![image](https://github.com/user-attachments/assets/45f112df-d76b-412e-8ad1-bc5a7f72c67e)
 
 # COMPLETAR
 
 ### Colocar una captura de pantalla de la ventana que aparece después de colocar la contraseña.
+![image](https://github.com/user-attachments/assets/99e6b87e-d1c6-4abf-90ad-918dd82815a0)
+
 
 **Para este punto no es necesario continuar con la instalación de Jenkins**
 
@@ -125,7 +129,5 @@ docker logs -n <cantidad de líneas> <nombre o id del contenedor>
 ```
 -t: para incluir la fecha y la hora
 
-
-
-
+![image](https://github.com/user-attachments/assets/d514f6df-0e49-4a96-9d97-e8b888317048)
 

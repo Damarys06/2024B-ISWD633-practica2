@@ -16,8 +16,11 @@ No puedes mapear puertos a un contenedor existente directamente después de su c
 
 ### Crear contenedor de Jenkins puertos contenedor: 8080 (interface web) y 50000 (comunicación entre nodos) imagen: jenkins/jenkins:alpine3.18-jdk11
 # COMPLETAR
+![image](https://github.com/user-attachments/assets/38a79de0-ac62-4d1d-a5b8-ef888c2bff3f)
 
 # COLOCAR UNA CAPTURA DE PANTALLA  DEL ACCESO http://localhost:8080
+![image](https://github.com/user-attachments/assets/87c87982-6e00-4a0e-b282-ab67aa13a670)
+
 
 ### ¿Cómo obtener la contraseña solicitada?
 Para obtener la contraseña solicitada es necesario ingresar al contenedor.
@@ -29,11 +32,27 @@ Para obtener la contraseña solicitada es necesario ingresar al contenedor.
 ### Ejecutar un comando en un contenedor de Docker en ejecución
 ```
 docker exec <nombre contenedor> <comando> <argumentos opcionales>
+
 ```
+![image](https://github.com/user-attachments/assets/45f112df-d76b-412e-8ad1-bc5a7f72c67e)
+
 # COMPLETAR
 ### ¿Para qué se usa el comando ls?
+El comando ls muestra una lista de archivos y directorios dentro del directorio actual (o de un directorio específico si se proporciona su ruta). Al ejecutar simplemente ls, obtienes una lista de los nombres de archivos y directorios en el directorio actual.
+
 ### ¿Para qué sirve el argumento -l junto al comando ls?
+El argumento -l (long format) proporciona una salida más detallada. Muestra información adicional sobre cada archivo y directorio, incluyendo:
+Permisos de archivo
+Número de enlaces
+Propietario
+Grupo
+Tamaño
+Fecha y hora de la última modificación
+Nombre del archivo o directorio
+
 ### Usar el contenedor de jenkins creado previamente y ejecutar el comando ls con el argumento -l
+![image](https://github.com/user-attachments/assets/01cbb288-4960-4f4f-9790-52eabf862026)
+
 # COMPLETAR
 # COLOCAR UNA CAPTURA DE PANTALLA
 
@@ -56,6 +75,9 @@ docker exec -i <nombre contenedor> /bin/bash
 ```
 docker exec -i <nombre contenedor> bash 
 ```
+![image](https://github.com/user-attachments/assets/09a7d58a-d4d2-497f-98ce-81faf0982c12)
+
+
 **Considerar**
 - /bin/bash: Al especificar la ruta completa del shell, Docker buscará el ejecutable /bin/bash en el sistema de archivos del contenedor y lo ejecutará. Esto es útil cuando quieres asegurarte de que se está utilizando un shell específico que está ubicado en una ubicación conocida en el sistema de archivos del contenedor. 
 - bash: Al especificar solo el nombre del shell, Docker buscará el comando bash en las rutas del sistema (por lo general, en las rutas definidas en la variable de entorno PATH) del contenedor y lo ejecutará. Esto asume que bash está disponible en alguna de las rutas del sistema definidas en el contenedor.

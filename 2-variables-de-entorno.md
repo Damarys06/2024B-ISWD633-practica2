@@ -1,5 +1,7 @@
 # Variables de Entorno
 ### ¿Qué son las variables de entorno
+las variables de entorno son variables disponibles para tu programa/aplicación de forma dinámica durante el tiempo de ejecución. El valor de estas variables puede proceder de diversas fuentes: archivos de texto, gestores secretos de terceros, scripts de llamada, etc.
+
 # COMPLETAR
 
 ### Para crear un contenedor con variables de entorno?
@@ -11,13 +13,21 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 ### Crear un contenedor a partir de la imagen de nginx:alpine con las siguientes variables de entorno: username y role. Para la variable de entorno rol asignar el valor admin.
 
 # COMPLETAR
+![image](https://github.com/user-attachments/assets/52d48169-8770-4c95-858b-cf08dc738b64)
+
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR
+![image](https://github.com/user-attachments/assets/ab39c757-cf09-443d-b41a-bafc91fc7444)
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos
 # COMPLETAR
+![image](https://github.com/user-attachments/assets/853a24b9-97ef-4860-8ec9-01fd605e2450)
+
 
 ### ¿El contenedor se está ejecutando?
+SI
+![image](https://github.com/user-attachments/assets/d8d92404-ce7e-4781-8ce5-0a27734e72a8)
+
 # COMPLETAR
 
 ### Identificar el problema
@@ -25,6 +35,8 @@ docker run -d --name <nombre contenedor> -e <nombre variable1>=<valor1> -e <nomb
 
 ### Eliminar el contenedor creado con mysql:8 
 # COMPLETAR
+![image](https://github.com/user-attachments/assets/5f73788a-8b86-462f-a9c5-c7deecb8cbb0)
+
 
 ### Para crear un contenedor con variables de entorno especificadas
 - Portabilidad: Las aplicaciones se vuelven más portátiles y pueden ser desplegadas en diferentes entornos (desarrollo, pruebas, producción) simplemente cambiando el archivo de variables de entorno.
@@ -42,8 +54,13 @@ Es necesario especificar la ruta absoluta del archivo si este se encuentra en un
 
 ### Crear un contenedor con mysql:8 , mapear todos los puertos y configurar las variables de entorno mediante un archivo
 # COMPLETAR
+![image](https://github.com/user-attachments/assets/d4d7eb91-7e64-4901-9aea-15191f4794ad)
 
 # CAPTURA CON LA COMPROBACIÓN DE LA CREACIÓN DE LAS VARIABLES DE ENTORNO DEL CONTENEDOR ANTERIOR 
+![image](https://github.com/user-attachments/assets/d5c9b838-4619-4169-8155-46effe03c32a)
+
 
 ### ¿Qué bases de datos existen en el contenedor creado?
+![image](https://github.com/user-attachments/assets/363dd257-01b0-4607-8a8a-7f6e581375fe)
+
 # COMPLETAR
